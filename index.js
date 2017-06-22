@@ -23,6 +23,7 @@ request(options, function (error, response, body) {
     console.log(JSON.parse(body).response.probabilities[0][0][0]);
     console.log(JSON.parse(body).response.probabilities[0][1][0]);
     console.log(JSON.parse(body).response.probabilities[0][2][0]);
+     console.log(recive);
    // console.log(recive);
     var carName=JSON.parse(body).response.probabilities[0][0][0];
     
