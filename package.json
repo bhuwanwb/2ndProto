@@ -4,7 +4,7 @@
   "description": "test",
   "main": "restapi.js",
   "scripts": {
-    "test": "node restapi.js"
+    "start": "node restapi.js"
   },
   "author": "Bhuwan",
   "license": "ISC",
