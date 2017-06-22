@@ -1,0 +1,16 @@
+{
+  "name": "myfirstproto",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node restapi.js"
+  },
+  "author": "Bhuwan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "response": "^0.18.0"
+  }
+}
