@@ -30,6 +30,8 @@ app.post('/CarMakePost', function (req, res) {
 
 app.post('/CarLicensePlate', function (req, res) {
     
+    console.log("Base64"+JSON.stringify(req.body));
+    
     CarMakeIndentifier.getCarNumber(req.body, (carName) =>{ 
         
        res.send(carName);
