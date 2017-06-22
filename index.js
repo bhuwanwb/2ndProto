@@ -21,6 +21,8 @@ var options = { method: 'POST',
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
     console.log(JSON.parse(body).response.probabilities[0][0][0]);
+    console.log(JSON.parse(body).response.probabilities[0][1][0]);
+    console.log(JSON.parse(body).response.probabilities[0][2][0]);
    // console.log(recive);
     var carName=JSON.parse(body).response.probabilities[0][0][0];
     
