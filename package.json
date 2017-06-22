@@ -2,7 +2,7 @@
   "name": "myfirstproto",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
+  "main": "restapi.js",
   "scripts": {
     "test": "node restapi.js"
   },
