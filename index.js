@@ -56,6 +56,8 @@ request(options, function (error, response, body) {
   if (error) throw new Error(error);
 
   console.log(body);
+    callback(body.results[0].plate);
+
 });
 
     }
