@@ -27,6 +27,15 @@ app.post('/CarMakePost', function (req, res) {
    });
 })
 
+
+app.post('/CarLicensePlate', function (req, res) {
+    
+    CarMakeIndentifier.getCarNumber(req.body, (carName) =>{ 
+        
+       res.send(carName);
+   });
+})
+
 app.listen(port, function () {
   console.log('Example app listening on port 3000!')
 })
