@@ -36,7 +36,7 @@ request(options, function (error, response, body) {
     getCarNumber:function(recive, callback ){
         
 var request = require("request");
-console.log("Base64"+recive)        
+console.log("Base64"+JSON.stringify(recive));        
 
 var options = { method: 'POST',
   url: 'https://api.openalpr.com/v2/recognize_bytes',
