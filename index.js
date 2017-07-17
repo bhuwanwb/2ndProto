@@ -28,7 +28,7 @@ request(options, function (error, response, body) {
     callback(carName);
     }
     catch(e){
-        console.log("Error 1")
+        callback("Error");
     }
     
    //(JSON.parse(body).response.probabilities[0][0][0]).send();
@@ -64,6 +64,7 @@ request(options, function (error, response, body) {
     callback(JSON.parse(body).results[0].plate);
     }
     catch(e){
+         callback("Error");
           console.log("Error 1")
     }
 });
