@@ -20,12 +20,16 @@ var options = { method: 'POST',
 
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
+        try{
     console.log(JSON.parse(body).response.probabilities[0][0][0]);
    // console.log(recive);
     var carName=JSON.parse(body).response.probabilities[0][0][0];
-    
+
     callback(carName);
-    
+    }
+    catch(exception e){
+        console.log("Error 1")
+    }
     
    //(JSON.parse(body).response.probabilities[0][0][0]).send();
 });
@@ -54,10 +58,14 @@ var options = { method: 'POST',
 
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
-
+ try{
   console.log(body);
+   
     callback(JSON.parse(body).results[0].plate);
-
+    }
+    catch(exception error){
+          console.log("Error 1")
+    }
 });
 
     }
