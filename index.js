@@ -27,7 +27,7 @@ request(options, function (error, response, body) {
 
     callback(carName);
     }
-    catch(exception e){
+    catch(e){
         console.log("Error 1")
     }
     
@@ -63,7 +63,7 @@ request(options, function (error, response, body) {
    
     callback(JSON.parse(body).results[0].plate);
     }
-    catch(exception error){
+    catch(e){
           console.log("Error 1")
     }
 });
